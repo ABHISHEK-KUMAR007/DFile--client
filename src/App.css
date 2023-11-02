@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+/*body{
+   background-image: linear-gradient(
+    to right,
+    #2d545e,
+    #8458B3,
+    rgba(0, 0, 255, 0.5),
+    #a28089
+  
+  )
+}*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght6400; 700&display=swap');
+
+
+
+
+.share{
+
+padding: 25px 30px; background-color: #050801;
+
+color: #a74e8b;
+
+font-weight: bold;
+
+border: none; border-radius: 5px;
+
+letter-spacing: 4px;
+
+overflow: hidden; transition: 0.5s;
+
+cursor: pointer;
+}
+
+.share:hover{
+
+background: #03e9f4;
+
+color: #6b8549; 
+box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #0369f4; -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+}
+/* .share{
+	margin-left:5px;
+	margin-top:5px;
+	color:white;
+	border:#111 10px;
+	background-color: black;
+	box-shadow: 10px 5px  5px 3px #603e48;
+	width:100px;;
+	height:30px;
+} */
+body {
+	background: #111;
+	height: 100vh;
+}
+.wrapper span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	/* box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff; */
+	box-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+	
+	animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.wrapper span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.wrapper span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.wrapper span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.wrapper span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+}
+.wrapper span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+}
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.content h2 b {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #fff;
+	font-family: montserrat;
+	font-size: 80px;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
